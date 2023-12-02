@@ -25,6 +25,20 @@ impl Default for Settings {
     }
 }
 
+fn check_directory() {
+
+    let current_dir = env::current_dir().expect("Не удалось получить текущий каталог");
+    let current_dir_str = current_dir.to_str().expect("Не удалось преобразовать в строку");
+    let modified_dir = format!("{}serverData", &current_dir_str[0..current_dir_str.len()-9]);
+
+    if !Path::new(&modified_dir).exists() {
+        match fs::create_dir(&modified_dir) {
+            Ok(_) => (),
+            Err(e) => eprintln!("Failed to create directory: {}", e),
+        }
+    }
+}
+
 fn handle_client(mut stream: TcpStream) {
     let mut buffer = Vec::new();
     stream.read_to_end(&mut buffer).expect("Failed to read data from socket");
@@ -47,6 +61,8 @@ fn handle_client(mut stream: TcpStream) {
 
     let mut count: i32 = data.count.parse().expect("Не удалось преобразовать в число");
 
+    check_directory();
+
     let data_dir = format!("{}serverData/data_{}.json", &current_dir_str[0..current_dir_str.len()-9], count);
     let file = File::create(data_dir).expect("Failed to create file");
     serde_json::to_writer(&file, &json_data).expect("Failed to write data to file");
@@ -62,6 +78,7 @@ fn handle_client(mut stream: TcpStream) {
     let serialized = serde_json::to_string_pretty(&settings).expect("Не удалось преобразовать в JSON");
     fs::File::create(modified_dir).expect("Не удалось создать файл").write_all(serialized.as_bytes()).expect("Не удалось записать в файл");
 }
+
 
 fn main() {
     let local_ip = get_local_ip().unwrap();
