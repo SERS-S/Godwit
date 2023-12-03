@@ -50,7 +50,7 @@ fn handle_client(mut stream: TcpStream) {
 
     let current_dir = env::current_dir().expect("Не удалось получить текущий каталог");
     let current_dir_str = current_dir.to_str().expect("Не удалось преобразовать в строку");
-    let modified_dir = format!("{}settings.json", &current_dir_str[0..current_dir_str.len()-9]);
+    let modified_dir = format!("{}count.json", &current_dir_str[0..current_dir_str.len()-9]);
 
     let path = Path::new(&modified_dir);
 
