@@ -1,0 +1,13 @@
+/Users/sergey/Desktop/GitHub/Godwit/transmission/tcpclient/target/debug/deps/log-43a1bf0a4567bb5f.rmeta: /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/lib.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/macros.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/serde.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/mod.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/error.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/key.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/source.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/value.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/__private_api.rs
+
+/Users/sergey/Desktop/GitHub/Godwit/transmission/tcpclient/target/debug/deps/log-43a1bf0a4567bb5f.d: /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/lib.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/macros.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/serde.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/mod.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/error.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/key.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/source.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/value.rs /Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/__private_api.rs
+
+/Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/lib.rs:
+/Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/macros.rs:
+/Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/serde.rs:
+/Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/mod.rs:
+/Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/error.rs:
+/Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/key.rs:
+/Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/source.rs:
+/Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/kv/value.rs:
+/Users/sergey/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.20/src/__private_api.rs:
