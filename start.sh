@@ -17,6 +17,6 @@ sleep 0.75
 cd transmission && cd tcpclient && cargo check && cd .. && cd tcpserver && cargo check
 echo -e "\033[1m\033[94mThe cargo environment is configured\033[0m"
 sleep 0.75
-cd .. && cd GenKey && python3 -m venv venv && source venv/bin/activate && pip install --upgrade pip && pip install pycryptodome
+cd .. && cd GenKey && python3 -m venv venv && source venv/bin/activate && pip install --upgrade pip && python3 -m pip install pycryptodome
 echo -e "\033[1m\033[94mThe python environment is configured\033[0m"
-rm -- "$0"
+cd ../.. && rm -- "$0"
