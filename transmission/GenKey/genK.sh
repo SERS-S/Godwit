@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
-python3 generateKey.py
+
+if source venv/bin/activate; then
+    python3 generateKey.py
+else
+    python3 generateKey.py
+fi
