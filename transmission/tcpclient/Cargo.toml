@@ -13,4 +13,4 @@ serde_json = "1.0.108"
 
 [[bin]]
 name = "runtcpclient"
-path = "src/tcpclient.rs"
+path = "src/TCPclient.rs"
