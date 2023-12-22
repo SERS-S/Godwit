@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
-python3 encryptionKey.py
+
+if source venv/bin/activate; then
+    python3 encryptionKey.py
+else
+    python3 encryptionKey.py
+fi
