@@ -1,5 +1,5 @@
 {
-    "ip_recipient": "192.168.1.67",
+    "ip_recipient": "255.255.255.255",
     "file_path": "file.json",
     "encryption": "True"
 }
