@@ -34,27 +34,30 @@ SOON!
 ### Schematic of the directory:
 
 
-```sh
-- Godwit
-  -- transmission
-    --- serverData
-    --- GenKey
-      --> keys_server / data
-      --> keys_client / data
-      --> decryptionKey.py
-      --> decryptK.sh
-      --> encryptionKey.py
-      --> encryptK.sh
-      --> generateKey.py
-      --> genK.sh
-    --- tcpclient
-    --- tcpserver
-    --- countjson
-  -- file.json
-  -- runtcpclient.sh
-  -- runtcpserver.sh
-  -- settings.json
-  -- start.sh
+```
+.
+└── Godwit
+    ├──  transmission
+    |    ├── serverData
+    |    ├── GenKey
+    |    |   ├── keys_server
+    |    |   |   └── data             
+    |    |   ├── keys_client 
+    |    |   |   └── data     
+    |    |   ├── decryptionKey.py
+    |    |   ├── decryptK.sh
+    |    |   ├── encryptionKey.py
+    |    |   ├── encryptK.sh
+    |    |   ├── generateKey.py
+    |    |   └── genK.sh
+    |    ├── tcpclient
+    |    ├── tcpserver
+    |    └── count.json
+    ├── file.json
+    ├── runtcpclient.sh
+    ├── runtcpserver.sh
+    ├── settings.json
+    └── start.sh
 ```
 
 > [!CAUTION]
