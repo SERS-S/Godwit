@@ -2,7 +2,7 @@
 
 ## Description:
 
-This is software for sending files using FTP protocol with asymmetric encryption feature (**FTPS**). The data movement technology is based on TCP protocol and continuous connection between client and server. The software is written in ***rust*** and partially in ***python***. The program is written so that everyone can use it regardless of the project language they choose for their language. 
+This is software for sending files using FTP protocol with asymmetric encryption feature (**FTP Secure**). The data movement technology is based on TCP protocol and continuous connection between client and server. The software is written in ***rust*** and partially in ***python***. The program is written so that everyone can use it regardless of the project language they choose for their language. 
 
 
 
@@ -33,10 +33,6 @@ SOON!
 
 ### Schematic of the directory:
 
-> [!CAUTION]
-> Never delete or change the contents of the following files:
-> ~Godwit/settings.json
-> ~Godwit/transmission/count.json
 
 ```sh
 - Godwit
@@ -61,9 +57,14 @@ SOON!
   -- start.sh
 ```
 
+> [!CAUTION]
+> Never delete or change the contents of the following files:
+> ~Godwit/settings.json
+> ~Godwit/transmission/count.json
+
 ### How and what works:
 
-### ! All files are saved to the following folder: ```Godwit/transmission/serverData```
+### ! All getting files by the server are saved to the following folder: ```Godwit/transmission/serverData```
 
 > **You can start your server with the following command:**
 ```sh
@@ -83,9 +84,9 @@ SOON!
 - **ip_recipient** - ip address to which the file is to be sent
 - **file_path** - path to **json** file whose data is to be sent
 > [!WARNING]
-> The file must be located anywhere in the Godwit directory
+> The file to be sent must be located anywhere in the Godwit directory
 >
-> The file must be **json** format in the correct form
+> The file to be sent must be **json** format in the correct form
 - **encryption**: ```True``` / ```False``` - asymmetric encryption function
 
 
