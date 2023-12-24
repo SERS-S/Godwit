@@ -4,6 +4,12 @@
 
 This is software for sending files using FTP protocol with asymmetric encryption feature (**FTPS**). The data movement technology is based on TCP protocol and continuous connection between client and server. The software is written in ***rust*** and partially in ***python***. The program is written so that everyone can use it regardless of the project language they choose for their language. 
 
+
+
+https://github.com/SERS-S/Godwit/assets/104014082/56ef76a5-2a15-4a7e-933d-0cd5709a8a7e
+
+
+
 ## The following presets are required for the software to work:
 
 - Download [python version 3](https://www.python.org/downloads/)
