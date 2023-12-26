@@ -2,7 +2,7 @@
 
 ## Description:
 
-This is software for sending files using FTP protocol with asymmetric encryption feature (**FTP Secure**). The data movement technology is based on TCP protocol and continuous connection between client and server. The software is written in ***rust*** and partially in ***python***. The program is written so that everyone can use it regardless of the project language they choose for their language. 
+This is software for sending files using FTP protocol with asymmetric encryption feature (**FTP Secure**). The data movement technology is based on TCP protocol and continuous connection between client and server. The software is written in ***Rust*** and partially in ***Python***. The program is written so that everyone can use it regardless of the project language they choose. 
 
 
 
@@ -31,7 +31,7 @@ SOON!
 ```
 ## How to work with the project:
 
-### Schematic of the directory:
+### Directory tree:
 
 
 ```
@@ -65,9 +65,9 @@ SOON!
 > ~Godwit/settings.json
 > ~Godwit/transmission/count.json
 
-### How and what works:
+### The way the stuff works:
 
-### ! All getting files by the server are saved to the following folder: ```Godwit/transmission/serverData```
+### ! All the files received by the server are saved to the following folder: ```Godwit/transmission/serverData```
 
 > **You can start your server with the following command:**
 ```sh
@@ -75,7 +75,7 @@ SOON!
 ```
 
 > [!IMPORTANT]
-> The server automatically detects the public ip and starts the server on it (if there is such ip)
+> The server automatically detects the public ip and starts the server on it (if there is such an ip)
 
 > **You can start the client with the following command:**
   ```sh
@@ -87,7 +87,7 @@ SOON!
 - **ip_recipient** - ip address to which the file is to be sent
 - **file_path** - path to **json** file whose data is to be sent
 > [!WARNING]
-> The file to be sent must be located anywhere in the Godwit directory
+> The file to be sent must be located somewhere in the Godwit directory
 >
 > The file to be sent must be **json** format in the correct form
 - **encryption**: ```True``` / ```False``` - asymmetric encryption function
