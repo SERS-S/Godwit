@@ -21,13 +21,18 @@ https://github.com/SERS-S/Godwit/assets/104014082/56ef76a5-2a15-4a7e-933d-0cd570
 ### For Unix/Linux platforms:
 ```sh
 git clone https://github.com/SERS-S/Godwit.git
+cd Godwit
 chmod +x start.sh 
 ./start.sh
 ```
 
 ### For Windows platform:
 ```sh
-SOON!
+git clone --no-checkout https://github.com/SERS-S/Godwit.git
+cd Godwit\transmission && (cd tcpclient && cargo check) && (cd .. && cd tcpserver && cargo check)
+cd .. && cd GenKey && python -m venv venv && venv\Scripts\activate && python -m pip install --upgrade pip && python -m pip install pycryptodome
+mkdir keys_client\data && mkdir keys_server\data
+del start.sh
 ```
 ## How to work with the project:
 
