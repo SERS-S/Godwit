@@ -29,8 +29,11 @@ chmod +x start.sh
 ### For Windows platform:
 ```sh
 git clone --no-checkout https://github.com/SERS-S/Godwit.git
-cd Godwit\transmission && (cd tcpclient && cargo check) && (cd .. && cd tcpserver && cargo check)
-cd .. && cd GenKey && python -m venv venv && venv\Scripts\activate && python -m pip install --upgrade pip && python -m pip install pycryptodome
+cd Godwit\transmission && (cd tcpclient && cargo check) 
+(cd .. && cd tcpserver && cargo check)
+cd .. && cd GenKey && python -m venv venv 
+venv\Scripts\activate && python -m pip install --upgrade pip 
+python -m pip install pycryptodome
 mkdir keys_client\data && mkdir keys_server\data
 del start.sh
 ```
