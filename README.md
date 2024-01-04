@@ -119,7 +119,12 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 ```
-
+Then execute the following **shell** commands:
+```sh
+systemctl daemon-reload
+systemctl enable tcprunserver.service
+systemctl start tcprunserver.service
+```
  ### You can financially support me:)
  
  **Toncoin**: ```UQD1LISMBRa99wn0WJRMw0twu6ayhHm88MJ3dj2Z0RFfGWRR```
