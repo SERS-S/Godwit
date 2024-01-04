@@ -100,6 +100,25 @@ del start.sh
 > The file to be sent must be **json** format in the correct form
 - **encryption**: ```True``` / ```False``` - asymmetric encryption function
 
+## You can make a linux daemon for tcpserver:
+You should go to the following directory: ```/etc/systemd/system```
+
+Use the command: ```nano tcprunserver.service```
+```
+[Unit]
+Description=Tcpserver
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/cargo run --bin runtcpserver
+WorkingDirectory=/root/Godwit/transmission/tcpserver
+User=root
+Group=root
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
 
  ### You can financially support me:)
  
