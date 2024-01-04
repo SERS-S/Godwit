@@ -14,7 +14,8 @@ use std::fs;
 struct Settings {
     ip_recipient: String,
     file_path: String,
-    encryption: String
+    encryption: String,
+    port: String
 }
 
 fn main() {
@@ -27,7 +28,7 @@ fn main() {
     let reader = BufReader::new(file);
     let settings_data: Settings = serde_json::from_reader(reader).unwrap();
 
-    match TcpStream::connect((&settings_data.ip_recipient[..], 8080)) {
+    match TcpStream::connect((&settings_data.ip_recipient[..], settings_data.port.parse::<u16>().unwrap())) {
         Ok(mut stream) => {
 
             let data_ask: String = ("|ask|".to_owned() + &settings_data.ip_recipient + "#" + &settings_data.encryption).to_string();
