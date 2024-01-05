@@ -1,6 +1,6 @@
 # Godwit
 
-## Description:
+## Description
 
 This is software for sending files using FTP protocol with asymmetric encryption feature (**FTP Secure**). The data movement technology is based on TCP protocol and continuous connection between client and server. The software is written in ***Rust*** and partially in ***Python***. The program is written so that everyone can use it regardless of the project language they choose. 
 
@@ -10,15 +10,15 @@ https://github.com/SERS-S/Godwit/assets/104014082/56ef76a5-2a15-4a7e-933d-0cd570
 
 
 
-## The following presets are required for the software to work:
+## The following presets are required for the software to work
 
 - Download [python version 3](https://www.python.org/downloads/)
 
 - Download [rust language](https://www.rust-lang.org/tools/install)
 
-## Set Up project:
+## Set Up project
 
-### For Unix/Linux platforms:
+### For Unix/Linux platforms
 ```sh
 git clone https://github.com/SERS-S/Godwit.git
 cd Godwit
@@ -26,7 +26,7 @@ chmod +x start.sh
 ./start.sh
 ```
 
-### For Windows platform:
+### For Windows platform
 ```sh
 git clone --no-checkout https://github.com/SERS-S/Godwit.git
 cd Godwit\transmission && (cd tcpclient && cargo check) 
@@ -37,9 +37,9 @@ python -m pip install pycryptodome
 mkdir keys_client\data && mkdir keys_server\data
 del start.sh
 ```
-## How to work with the project:
+## How to work with the project
 
-### Directory tree:
+### Directory tree
 
 
 ```
@@ -73,7 +73,7 @@ del start.sh
 > ~Godwit/settings.json
 > ~Godwit/transmission/count.json
 
-### The way the stuff works:
+### The way the stuff works
 
 ### ! All the files received by the server are saved to the following folder: ```Godwit/transmission/serverData```
 
@@ -100,7 +100,7 @@ del start.sh
 > The file to be sent must be **json** format in the correct form
 - **encryption**: ```True``` / ```False``` - asymmetric encryption function
 
-## You can make a linux daemon for tcpserver:
+## You can make a linux daemon for tcpserver
 You should go to the following directory: ```/etc/systemd/system```
 
 Use the command: ```nano tcprunserver.service```
