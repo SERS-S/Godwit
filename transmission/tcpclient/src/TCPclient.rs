@@ -47,7 +47,7 @@ fn main() {
             if concent == "yes" {
                 if encryption == "key"{
                     
-                    let mut stream = TcpStream::connect((&settings_data.ip_recipient[..], 8080)).expect("Server Problem");
+                    let mut stream = TcpStream::connect((&settings_data.ip_recipient[..], settings_data.port.parse::<u16>().unwrap())).expect("Server Problem");
 
                     let pub_key_dir = format!("{}GenKey/keys_client/public.pem", &current_dir_str[0..current_dir_str.len()-9]);
                     let pub_key_path = Path::new(&pub_key_dir);
@@ -90,7 +90,7 @@ fn main() {
 
                 } else if encryption == "without" && key == "False" {
 
-                    let mut stream = TcpStream::connect((&settings_data.ip_recipient[..], 8080)).expect("Server Problem");
+                    let mut stream = TcpStream::connect((&settings_data.ip_recipient[..], settings_data.port.parse::<u16>().unwrap())).expect("Server Problem");
                     let file_dir = format!("{}{}", &current_dir_str[0..current_dir_str.len()-22], settings_data.file_path);
                     let file = File::open(file_dir).expect("Unable to open file");
                     let reader = BufReader::new(file);
