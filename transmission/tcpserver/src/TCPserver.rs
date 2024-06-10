@@ -36,7 +36,7 @@ impl Default for Settings {
 }
 
 fn handle_client(mut stream: TcpStream) {
-    let mut buffer = [0; 2048];
+    let mut buffer = [0; 1048576];
     let size = stream.read(&mut buffer).unwrap();
     let mut message = String::from_utf8_lossy(&buffer[..size]).to_string();
 

@@ -34,7 +34,7 @@ fn main() {
             let data_ask: String = ("|ask|".to_owned() + &settings_data.ip_recipient + "#" + &settings_data.encryption).to_string();
             stream.write(&data_ask.as_bytes()).unwrap();
 
-            let mut buffer = [0; 2048];
+            let mut buffer = [0; 131072];
             let size = stream.read(&mut buffer).unwrap();
             let response = String::from_utf8_lossy(&buffer[..size]).to_string();
 
@@ -111,5 +111,5 @@ fn main() {
             println!("Failed to connect: {}", e);
         }
     }
-    println!("Terminated.");
+    println!("Completed");
 }
